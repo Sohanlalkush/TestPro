@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: php-postgres-app
+    env: php
+    plan: free
+    buildCommand: ""
+    startCommand: "php -S 0.0.0.0:10000"
+    envVars:
+      - key: PGHOST
+        value: ep-fragrant-butterfly-aeei6yuv-pooler.c-2.us-east-2.aws.neon.tech
+      - key: PGDATABASE
+        value: neondb
+      - key: PGUSER
+        value: neondb_owner
+      - key: PGPASSWORD
+        value: npg_Sbvcl40NWhqJ
+      - key: PGPORT
+        value: 5432
